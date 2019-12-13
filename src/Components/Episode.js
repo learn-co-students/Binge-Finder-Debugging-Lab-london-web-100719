@@ -1,13 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const Episode = (props) => {
-  let { myEpisode } = props
-
+const Episode = props => {
   return (
     <div>
-      Episode {myEpisode.number} - {myEpisode.name}
+      Episode {props.episode.number} - {props.episode.name}
     </div>
-  )
-}
+  );
+};
 
 export default Episode;
